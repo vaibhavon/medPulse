@@ -1,0 +1,302 @@
+/* ================= ROOT ================= */
+
+.staff {
+    width: 85vw;
+    padding: 28px;
+    /* padding-top: 1000px; */
+    background: #f7f8fc;
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+/* ================= HEADER ================= */
+
+.staff-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.staff-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.staff-header p {
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.staff-header button {
+    background: #05060f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= SEARCH ================= */
+
+.staff-search {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+/* ================= FILTERS ================= */
+
+.staff-filters {
+    display: inline-flex;
+    background: #ececf1;
+    padding: 6px;
+    border-radius: 14px;
+    gap: 6px;
+    margin-bottom: 26px;
+}
+
+.staff-filters button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 12px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.staff-filters .active {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* ================= LIST ================= */
+
+.staff-list {
+    display: grid;
+    gap: 18px;
+}
+
+/* ================= STAFF CARD ================= */
+
+.staff-card {
+    background: white;
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.staff-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.staff-info {
+    flex: 1;
+}
+
+.staff-info h3 {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.staff-info .id {
+    font-size: 12px;
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: #374151;
+}
+
+.staff-info p {
+    color: #6b7280;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.leave {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+/* ================= FORM ================= */
+
+.staff-form {
+    max-width: 520px;
+    background: white;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+    display: grid;
+    gap: 14px;
+}
+
+.staff-form input,
+.staff-form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+}
+
+.staff-form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    font-family: inherit;
+    resize: vertical;
+}
+
+/* ================= ERROR MESSAGE ================= */
+
+.error-msg {
+    color: #dc2626;
+    background: #fee2e2;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ================= FORM ACTIONS ================= */
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.form-actions button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-actions .cancel {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.form-actions .cancel:hover {
+    background: #d1d5db;
+}
+
+.form-actions .save {
+    background: #05060f;
+    color: white;
+}
+
+.form-actions .save:hover {
+    background: #1f2937;
+}
+
+/* ================= PROFILE ================= */
+
+.profile-card {
+    max-width: 520px;
+    background: white;
+    padding: 26px;
+    border-radius: 20px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card h2 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin-top: 6px;
+    color: #374151;
+}
+
+.profile-card button {
+    margin-top: 16px;
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.profile-card button:hover {
+    background: #1d4ed8;
+}
+
+/* ================= BUTTONS ================= */
+
+.back-btn {
+    padding: 8px 16px;
+    background: #e5e7eb;
+    color: #374151;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #d1d5db;
+}
+
+.delete-btn {
+    padding: 8px 12px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}

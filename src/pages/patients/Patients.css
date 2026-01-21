@@ -1,0 +1,323 @@
+.patients {
+  width: 85vw;
+  /* padding: 24px; */
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* HEADER */
+
+.patients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.patients-header h2 {
+  font-size: 26px;
+}
+
+.patients-header p {
+  color: #666;
+  margin-top: 4px;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* SEARCH */
+
+.patients-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.patients-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+/* CARD */
+
+.patients-list {
+  display: grid;
+  gap: 16px;
+}
+
+.patient-card {
+  display: flex;
+  gap: 16px;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  align-items: flex-start;
+}
+
+.avatar {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.patient-info {
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pid {
+  font-size: 12px;
+  background: #eef2ff;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.status.active {
+  background: #16a34a;
+}
+
+.status.critical {
+  background: #dc2626;
+}
+
+.status.inactive {
+  background: #6b7280;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.details div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diagnosis {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.next {
+  margin-top: 6px;
+  color: #2563eb;
+  font-size: 13px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  color: #666;
+}
+
+/* MODAL */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 520px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.form-grid textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 70px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.cancel {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.save {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+
+
+.patients {
+  padding: 24px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.patients-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.patients-header button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.patients-search {
+  margin: 12px 0;
+  padding: 8px;
+  width: 260px;
+}
+
+.patients-list {
+  display: grid;
+  gap: 14px;
+}
+
+.patient-card {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-actions button {
+  margin-left: 6px;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.edit{
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.patient-form {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+}
+
+.patient-form input,
+.patient-form textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.save {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.cancel {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.profile-card,
+.history-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+

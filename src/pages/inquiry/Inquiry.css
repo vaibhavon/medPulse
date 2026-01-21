@@ -1,0 +1,121 @@
+.inquiry {
+    width: 85vw;
+    padding: 28px;
+    background: #f7f8fc;
+    min-height: 100vh;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.inquiry-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.inquiry-header p {
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.inquiry-filters {
+    display: inline-flex;
+    background: #ececf1;
+    padding: 6px;
+    border-radius: 14px;
+    gap: 6px;
+    margin-bottom: 22px;
+}
+
+.inquiry-filters button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 12px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inquiry-filters .active {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.inquiry-list {
+    display: grid;
+    gap: 16px;
+}
+
+.inquiry-card {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.inq-left h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.complaint {
+    margin: 6px 0;
+    color: #374151;
+}
+
+.inq-left small {
+    color: #9ca3af;
+}
+
+.inq-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 160px;
+    align-items: flex-end;
+}
+
+.inq-right select {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.inq-right button {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.badge.new {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.badge.inprogress {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.badge.resolved {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.empty {
+    text-align: center;
+    color: #9ca3af;
+    padding: 30px;
+}
